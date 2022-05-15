@@ -80,8 +80,8 @@ label:hover .control-point {
     display: flex;
     white-space: nowrap;
     overflow: hidden;
-    height: 26px;
-    font-size: 24px;
+    height: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .text-container {
@@ -176,41 +176,33 @@ label:hover .control-point {
     }
 
     .text-wrapper {
-        width: 60vw;
-        font-size: 16px;
-        height: 18px;
+        height: 1.2rem;
+        font-size: 1rem;
+    }
+
+    #slide1:checked ~ .slider-wrapper > .slider-container {
+        margin-left: 0;
+    }
+    #slide2:checked ~ .slider-wrapper > .slider-container {
+        margin-left: calc(-60vw);
+    }
+    #slide3:checked ~ .slider-wrapper > .slider-container {
+        margin-left: calc(-60vw*2);
+    }
+    #slide4:checked ~ .slider-wrapper > .slider-container {
+        margin-left: calc(-60vw*3);
     }
 
     #slide1:checked ~ .text-wrapper > .text-container {
         margin-top: 0;
     }
     #slide2:checked ~ .text-wrapper > .text-container {
-        margin-top: calc(-19px);
+        margin-top: calc(-18.5px);
     }
     #slide3:checked ~ .text-wrapper > .text-container {
-        margin-top: calc(-19px*2);
+        margin-top: calc(-18.5px*2);
     }
     #slide4:checked ~ .text-wrapper > .text-container {
-        margin-top: calc(-19px*3);
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .text-wrapper {
-        font-size: 12px;
-        height: 14px;
-    }
-
-    #slide1:checked ~ .text-wrapper > .text-container {
-        margin-top: 0;
-    }
-    #slide2:checked ~ .text-wrapper > .text-container {
-        margin-top: calc(-15px);
-    }
-    #slide3:checked ~ .text-wrapper > .text-container {
-        margin-top: calc(-15px*2);
-    }
-    #slide4:checked ~ .text-wrapper > .text-container {
-        margin-top: calc(-15px*3);
+        margin-top: calc(-18.5px*3);
     }
 }
